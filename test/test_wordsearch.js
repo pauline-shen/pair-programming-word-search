@@ -35,4 +35,19 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['H', 'R', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['B', 'A', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'N', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'K', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'FRANK')
+
+    assert.isTrue(result);
+  });
 });
